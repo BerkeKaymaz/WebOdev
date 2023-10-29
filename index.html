@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e50e1f0e6.js" crossorigin="anonymous"></script>
+    <title>Berke Kaymaz</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="#">Berke Kaymaz</a></h2>
+            </div>
+            <ul class="nav_links">
+                <li><a href="#anasayfa">Anasayfa</a></li>
+                <li><a href="#hakkımda">Hakkımda</a></li>
+                <li><a href="#Beceriler">Beceriler</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#iletesim">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ANASAYFA -->
+    <section id="anasayfa">
+        <div class="inner_anasayfa">
+            <div class="child_anasayfa">
+                <h1>Merhaba ben Berke <br> <span class="span_child">Sayfama Hoşgeldin</span></h1>
+                <button id="btn" class="btn">İletişime Git</button>
+                <script>
+                    document.getElementById("btn").addEventListener("click",function(){
+                        document.getElementById("iletesim").scrollIntoView({ behavior : "smooth"})
+                    })
+                </script>
+           
+            </div>
+                <div class="child_anasayfa">
+                    <img src="/img/WhatsApp Image 2023-10-28 at 20.15.37.jpeg" alt="">
+
+                </div>
+             </div>
+        </div>  
+    </section>
+   
+   
+    <!-- HAKKIMDA -->
+   <section id="hakkımda">
+            <div class="about">
+                <div class="main">
+                    <img src="/img/dude-r.jpg" alt="">
+                    <div class="text-about">
+                        <h1>Hakkımda</h1>
+                        <p>Ben Berke, Süleyman Demirel Üniversitesi Bilgisayar mühendisliği 3. sınıf öğrencisiyim. Otomobiller ve motorsporlarına ilgiliyim.
+                             </p>
+                    </div>
+                </div>
+            </div>
+   </section>
+
+
+   <!-- BECERİLER -->
+   <section id="Beceriler">
+     <div class="container">
+        <div class="main-title">
+            <h1>Beceriler</h1>
+            <p>Java ile Backend ve masaüstü uygulama geliştirme üzerinde uğraştım. Bir süredir Kotlin ile Android uygulama geliştirme üzerinde çalışıyorum </p>
+        </div>
+        <div class="row">
+            <section class="col">
+                <div class="sub-title">
+                    <h2>Programlama Becerileri</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="subject">Java</div>
+                        <div class="progress-bar" value="70%">
+                            <div class="progress-line" style="max-width: 70%;"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="skill">
+                        <div class="subject">Kotlin</div>
+                        <div class="progress-bar" value="50%">
+                            <div class="progress-line" style="max-width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">C</div>
+                        <div class="progress-bar" value="40%">
+                            <div class="progress-line" style="max-width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="subject">C#</div>
+                        <div class="progress-bar" value="20%">
+                            <div class="progress-line" style="max-width: 20%;"></div>
+                        </div>
+                        <div class="skill">
+                            <div class="subject">Assembly</div>
+                            <div class="progress-bar" value="1%">
+                                <div class="progress-line" style="max-width: 1%;"></div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+     </div>
+        
+
+
+    </section>
+   
+   
+   
+   
+   
+    <!-- PROJELER -->
+    <section id="projeler">
+        <div class="section_title">
+            <div class="cont">           
+                 <h2>Projeler</h2></div>
+
+        </div>
+        <div class="inner_projeler">
+            <div class="inner_projeler_child">
+                <img class="john" src="/img/projeler.webp">
+            </div>
+            <div class="cont2">  <p>Henüz üzerinde çalıştığım kayda değer olduğunu düşündüğüm bir proje yok</p></div>
+                
+                
+        </div>
+    </section>
+
+
+   <!-- İLETİŞİM -->
+   <section id="iletesim">
+    <div class="section_title">
+        <h2>İletişime Geç</h2>
+    </div>
+    <div class="inner_contact">
+        <div class="child_cantact">
+            <img src="./img/NEW-CONTACT-BANNER.jpg" alt="">
+        </div>
+        <div class="child_contact">
+            <form action="#">
+                <input placeholder="İsim" type="text" name="fullname" id="">
+                <input placeholder="E-mail" type="text" name="fullname" id="">
+                <input placeholder="Tel" type="text" name="fullname" id="">
+                <textarea placeholder="Mesaj" name="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Gönder">
+
+            </form>
+        </div>
+    </div>
+
+   </section>
+
+   <!--Foter-->
+   <div class="footer">
+    <div class="footer_content">
+      <a href="https://github.com/BerkeKaymaz" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:berkekaymaz@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+    </div>
+  </div>
+    
+</body>
+</html>
